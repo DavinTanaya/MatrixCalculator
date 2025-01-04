@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Matrix Calculator - Python-based online tool for matrix calculations, including diagonalizable matrices, LU Decomposition, Power Method, and Singular Value Decomposition. Ideal for students and professionals."
+    />
+    <meta
+      name="author"
+      content="Davin Tanaya, Dean Febrio Denny-Xie, Ryu Orlando Tamin, Vania Wyanet Tumbelaka"
+    />
+    <meta
+      name="keywords"
+      content="Matrix Calculator, Linear Algebra, Matrix Operations, Matrix Inversion, Determinants, Math Tools, Advanced Linear Algebra, linalg, adv linalg, Diagonalize, Diagonalizable, LU Decomposition, Crout, Crout's method, Power Method, SVD, Singular Value Decomposition"
+    />
+    <meta property="og:title" content="Matrix Calculator" />
+    <meta
+      property="og:description"
+      content="A Python-based online tool for advanced matrix calculations, including diagonalizable matrices, LU Decomposition, Power Method, and Singular Value Decomposition (SVD)."
+    />
+    <meta property="og:url" content="https://linalg.online/" />
+    <meta property="og:type" content="website" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/IconLinalg.svg" />
+    <title>Matrix Calculator</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+    <script>
+      kofiWidgetOverlay.draw("linalg", {
+        type: "floating-chat",
+        "floating-chat.donateButton.text": "Support us",
+        "floating-chat.donateButton.background-color": "#79D7BE",
+        "floating-chat.donateButton.text-color": "#fff",
+      });
+    </script>
+    <script>
+      document.addEventListener("scroll", function () {
+        const footer = document.querySelector(".footer");
+        const footerTop = footer.getBoundingClientRect().top;
+        const widget = document.querySelector(
+          ".floatingchat-container-wrap-mobi"
+        );
+
+        if (footerTop < window.innerHeight) {
+          widget.style.bottom = "100px";
+        } else {
+          widget.style.bottom = "16px";
+        }
+      });
+    </script>
+  </body>
+</html>
