@@ -39,6 +39,7 @@ jobs:
               # Masuk ke direktori proyek
               cd matrix-calculator
               git config --global url."https://$GH_TOKEN@github.com/".insteadOf "https://github.com/"
+              git remote set-url origin https://$GH_TOKEN@github.com/DavinTanaya/matrix-calculator.git
               git fetch origin main
               git pull origin main
 
