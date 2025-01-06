@@ -7,7 +7,7 @@ from .routers import diagonalizableRouter, luDecompositionRouter, svdRouter, pow
 app = FastAPI(default_response_class=ORJSONResponse)
 
 origins = [
-  "https://linalg.online/",
+  "https://linalg.online",
 ]
 
 app.add_middleware(
