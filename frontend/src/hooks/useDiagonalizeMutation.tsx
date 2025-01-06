@@ -5,7 +5,7 @@ import { DiagonalizeResponse } from "../lib/types";
 export default function useDiagonalizeMutation() {
   const diagonalizeMutation = useMutation({
     mutationFn: (matrix: number[][]) => {
-      return API.post<DiagonalizeResponse>("/diagonalize", {matrix});
+      return API.post<DiagonalizeResponse>("/diagonalize/", {matrix});
     },
   });
   

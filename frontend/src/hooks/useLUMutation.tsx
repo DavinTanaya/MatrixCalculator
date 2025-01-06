@@ -5,7 +5,7 @@ import { LUResponse } from "../lib/types";
 export default function useLUMutation() {
   const LUMutation = useMutation({
     mutationFn: (A: number[][]) => {
-      return API.post<LUResponse>("/lu", { A });
+      return API.post<LUResponse>("/lu/", { A });
     },
   });
 

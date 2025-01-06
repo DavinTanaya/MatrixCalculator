@@ -5,7 +5,7 @@ import { PowerMethodResponse } from "../lib/types";
 export default function usePowerMethodMutation() {
   const powerMethodMutation = useMutation({
     mutationFn: (payload: { A: number[][]; x0?: number[] }) => {
-      return API.post<PowerMethodResponse>("/powermethod", payload);
+      return API.post<PowerMethodResponse>("/powermethod/", payload);
     },
   });
 

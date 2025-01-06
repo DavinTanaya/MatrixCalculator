@@ -5,7 +5,7 @@ import { SVDResponse } from "../lib/types";
 export default function useSVDMutation() {
   const SVDMutation = useMutation({
     mutationFn: (matrix: number[][]) => {
-      return API.post<SVDResponse>("/svd", { matrix });
+      return API.post<SVDResponse>("/svd/", { matrix });
     },
   });
 
