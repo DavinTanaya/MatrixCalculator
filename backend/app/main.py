@@ -8,6 +8,7 @@ app = FastAPI(default_response_class=ORJSONResponse)
 
 origins = [
   "https://linalg.online",
+
 ]
 
 app.add_middleware(
