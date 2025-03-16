@@ -1,3 +1,4 @@
+# Author: Davin Tanaya, Dean Febrio Denny-Xie, Ryu Orlando Tamin, Vania Wyanet Tumbelaka
 # Project Setup
 
 ## Back End
