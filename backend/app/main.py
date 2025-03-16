@@ -6,13 +6,14 @@ from .routers import diagonalizableRouter, luDecompositionRouter, svdRouter, pow
 #init app
 app = FastAPI(default_response_class=ORJSONResponse)
 
-origins = [
-  "https://linalg.online",
-]
+# origins = [
+#   "https://linalg.online",
+#   "http://localhost:5173"
+# ]
 
 app.add_middleware(
   CORSMiddleware,
-  allow_origins=origins,
+  allow_origins=["*"],
   allow_credentials=True,
   allow_methods=["*"],
   allow_headers=["*"],
